@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medische Steekkaart</title>
+</head>
+
+<body>
+    <h1>Medische steekkaart</h1>
+    <fieldset>
+        <legend>Persoonlijke gegevens van het kind</legend>
+
+        <p>
+            <label for="naam">Naam: </label>
+            <input type="text" name="naam" value="" id="naam">
+            <br><label for="voornaam">Voornaam: </label>
+            <input type="text" name="voornaam" value="" id="voornaam">
+            <br><label for="straat">Straat: </label>
+            <input type="text" name="straat" value="" id="straat">
+            <br><label for="nr">Nr: </label>
+            <input type="text" name="nr" value="" id="nr">
+            <br><label for="email">E-mail: </label>
+            <input type="text" name="email" value="" id="email">
+            <br><label for="geboortedatum">Geboortedatum: </label>
+            <input type="date" name="geboortedatum" value="" id="geboortedatum">
+        </p>
+
+    </fieldset>
+    <fieldset>
+        <legend>Medische gegevens</legend>
+        <p>Huisarts:</p>
+
+
+        <p>
+            <br><label for="nk">Naam: </label>
+            <input type="text" name="naam_kind" value="" id="nk">
+            <br><label for="telefoon">Telefoonnummer: </label>
+            <input type="tel" name="telefoonnummer" value="" id="telefoon">
+        <p>
+            <label for="medhistoriek">Bestaat er een relevante medische historiek (heelkundige ingrepen, belangrijke
+                of
+                chronische ziektes,...) van uw kind?</label>
+            <br><textarea name="historiek" id="medhistoriek"></textarea>
+        </p>
+        <p>
+            <label for="ziektes">Lijd uw kind aan een chronische ziekte of handicap?
+                (Suikerziekte,epilepsie,astma,hartaandoeningen,...)</label>
+            <br><textarea name="ziekte_kind" id="ziektes"></textarea>
+        </p>
+        <p>
+        <ol>
+            <li>
+                Is uw kind allergisch voor:
+                <ol>
+                    <li>Geneesmiddelen?
+                        <input type="radio" name="keuze" value="ja" id="ja">
+                        <label for="ja">Ja</label>
+                        <input type="radio" name="keuze" value="nee" id="nee">
+                        <label for="nee">Nee</label>
+                    </li>
+                    <li>Bepaalde stoffen, dieren of levensmiddelen?</li>
+                </ol>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        </p>
+
+        </p>
+
+    </fieldset>
+</body>
+
+</html>
