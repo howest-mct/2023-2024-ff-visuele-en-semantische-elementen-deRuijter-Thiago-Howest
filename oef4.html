@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiobuttons en Checkboxen</title>
+</head>
+
+<body>
+    <form action="Post">
+        <select name="taal">
+            <option value="default">---Maak hier uw keuze ---</option>
+            <option value="nl">Nederlands </option>
+            <option value="fr">Français </option>
+            <option value="eng">English </option>
+        </select>
+        <p>
+            <input type="radio" name="geslacht" value="vr" id="vrouw">
+            <label for="vrouw">Vrouw</label>
+            <br><input type="radio" name="geslacht" value="man" id="man">
+            <label for="man">Man</label>
+            <br><input type="radio" name="geslacht" value="and" id="andere">
+            <label for="andere">Andere</label>
+        </p>
+        <p><label for="naam">Gebruikersnaam:</label>
+            <br><input type="text" name="gebruikersnaam" value="" id="naam">
+        </p>
+        <p><label for="ww">Wachtwoord:</label>
+            <br><input type="text" name="wachtwoord" value="" id="ww">
+        </p>
+        <input type="submit" value="Log in" name="submit">
+    </form>
+</body>
+
+</html>

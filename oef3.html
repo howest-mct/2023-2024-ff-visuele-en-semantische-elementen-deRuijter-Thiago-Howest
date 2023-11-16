@@ -8,19 +8,21 @@
 </head>
 
 <body>
-    <select name="taal">
-        <option value="default">---Maak hier uw keuze ---</option>
-        <option value="nl">Nederlands</option>
-        <option value="fr">Français</option>
-        <option value="eng">English</option>
-    </select>
-    <p><label for="naam">Gebruikersnaam:</label>
-        <br><input type="text" name="Gebruikersnaam" value="" id="naam">
-    </p>
-    <p><label for="ww">Wachtwoord:</label>
-        <br><input type="text" name="wachtwoord" value="" id="ww">
-    </p>
-    <input type="submit" value="Log in" name="submit">
+    <form action="Post">
+        <select name="taal">
+            <option value="default">---Maak hier uw keuze ---</option>
+            <option value="nl">Nederlands</option>
+            <option value="fr">Français</option>
+            <option value="eng">English</option>
+        </select>
+        <p><label for="naam">Gebruikersnaam:</label>
+            <br><input type="text" name="Gebruikersnaam" value="" id="naam">
+        </p>
+        <p><label for="ww">Wachtwoord:</label>
+            <br><input type="text" name="wachtwoord" value="" id="ww">
+        </p>
+        <input type="submit" value="Log in" name="submit">
+    </form>
 </body>
 
 </html>
