@@ -8,122 +8,139 @@
 </head>
 
 <body>
-    <h1>Medische steekkaart</h1>
     <fieldset>
-        <legend>Persoonlijke gegevens van het kind</legend>
-
+        <h1>Medische steekkaart</h1>
+        <fieldset>
+            <legend>Persoonlijke gegevens van het kind</legend>
+            <p>
+                <label for="naam">Naam: </label>
+                <input type="text" name="naam" value="" id="naam">
+                <br><label for="voornaam">Voornaam: </label>
+                <input type="text" name="voornaam" value="" id="voornaam">
+                <br><label for="straat">Straat: </label>
+                <input type="text" name="straat" value="" id="straat">
+                <br><label for="nr">Nr: </label>
+                <input type="number" name="nr" value="" id="nr">
+                <br><label for="email">E-mail: </label>
+                <input type="email" name="email" value="" id="email">
+                <br><label for="geboortedatum">Geboortedatum: </label>
+                <input type="date" name="geboortedatum" value="" id="geboortedatum">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Medische gegevens</legend>
+            <p>Huisarts:</p>
+            <p>
+                <br><label for="nd">Naam: </label>
+                <input type="text" name="naam_dokter" value="" id="nd">
+                <br><label for="telefoon">Telefoonnummer: </label>
+                <input type="tel" name="telefoonnummer" value="" id="telefoon">
+            <p>
+                <label for="medhistoriek">Bestaat er een relevante medische historiek (heelkundige ingrepen, belangrijke
+                    of
+                    chronische ziektes,...) van uw kind?</label>
+                <br><textarea name="historiek" id="medhistoriek"></textarea>
+            </p>
+            <p>
+                <label for="ziektes">Lijd uw kind aan een chronische ziekte of handicap?
+                    (Suikerziekte,epilepsie,astma,hartaandoeningen,...)</label>
+                <br><textarea name="ziekte_kind" id="ziektes"></textarea>
+            </p>
+            <p>
+            <ol>
+                <li>
+                    Is uw kind allergisch voor:
+                    <ol>
+                        <li>Geneesmiddelen?
+                            <br><input type="radio" name="keuze" value="ja" id="ja">
+                            <label for="ja">Ja</label>
+                            <input type="radio" name="keuze" value="nee" id="nee">
+                            <label for="nee">Nee</label>
+                            <br>Welke?
+                            <label for="gm"></label>
+                            <input type="text" name="geneesmiddel" value="" id="gm">
+                        </li>
+                        <li>Bepaalde stoffen, dieren of levensmiddelen?
+                            <br><input type="radio" name="keuze2" value="ja" id="ja2">
+                            <label for="ja2">Ja</label>
+                            <input type="radio" name="keuze2" value="nee" id="nee2">
+                            <label for="nee2">Nee</label>
+                            <br>Welke?
+                            <label for="al"></label>
+                            <input type="text" name="allergie" value="" id="al">
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    Werd uw kind gevaccineerd tegen tetanus?
+                    <br><input type="radio" name="keuze3" value="ja" id="ja3">
+                    <label for="ja3">Ja</label>
+                    <input type="radio" name="keuze3" value="nee" id="nee3">
+                    <label for="nee3">Nee</label>
+                    <br>Zo ja, wanneer?
+                    <label for="tetanusdatum"></label>
+                    <input type="date" name="tetanusdatum" value="" id="tetanusdatum">
+                </li>
+                <li>
+                    Moet uw kind geneesmiddelen nemen tijdens het kamp?
+                    <br><input type="radio" name="keuze4" value="ja" id="ja4">
+                    <label for="ja4">Ja</label>
+                    <input type="radio" name="keuze4" value="nee" id="nee4">
+                    <label for="nee4">Nee</label>
+                    <br>Welke, wanneer, hoeveel?
+                    <br><textarea name="geneesmiddelen" id="gm"></textarea>
+                </li>
+                <li>Slaapwandelt uw kind?
+                    <input type="radio" name="keuze5" value="ja" id="ja5">
+                    <label for="ja5">Ja</label>
+                    <input type="radio" name="keuze5" value="nee" id="nee5">
+                    <label for="nee5">Nee</label>
+                </li>
+                <li>
+                    Bedwatert uw kind?
+                    <input type="radio" name="keuze6" value="ja" id="ja6">
+                    <label for="ja6">Ja</label>
+                    <input type="radio" name="keuze6" value="nee" id="nee6">
+                    <label for="nee6">Nee</label>
+                </li>
+                <li>
+                    Moet uw kind een dieet volgen?
+                    <input type="radio" name="keuze7" value="ja" id="ja7">
+                    <label for="ja7">Ja</label>
+                    <input type="radio" name="keuze7" value="nee" id="nee7">
+                    <label for="nee7">Nee</label>
+                </li>
+                <li>
+                    Mag het bepaalde voedingsstoffen niet eten?
+                    <br><textarea name="voedingstoffen" id="vs"></textarea>
+                </li>
+                <li>Kan uw kind deelnemen aan alle sport- en spelactiviteiten, aangepast aan zijn leeftijd?
+                    <input type="radio" name="keuze8" value="ja" id="ja8">
+                    <label for="ja8">Ja</label>
+                    <input type="radio" name="keuze8" value="nee" id="nee8">
+                    <label for="nee8">Nee</label>
+                </li>
+                <li>
+                    Zijn er aandachtpunten vanuit geloofs- of humane overtuigingen naar activiteiten of maaltijden toe?
+                    <br><textarea name="aandachtspunten" id="ap"></textarea>
+                </li>
+                <li>Andere inlichtingen of opmerkingen?
+                    <br><textarea name="inlichtingen" id="il"></textarea>
+                </li>
+            </ol>
+            </p>
+            </p>
+        </fieldset>
         <p>
-            <label for="naam">Naam: </label>
-            <input type="text" name="naam" value="" id="naam">
-            <br><label for="voornaam">Voornaam: </label>
-            <input type="text" name="voornaam" value="" id="voornaam">
-            <br><label for="straat">Straat: </label>
-            <input type="text" name="straat" value="" id="straat">
-            <br><label for="nr">Nr: </label>
-            <input type="number" name="nr" value="" id="nr">
-            <br><label for="email">E-mail: </label>
-            <input type="email" name="email" value="" id="email">
-            <br><label for="geboortedatum">Geboortedatum: </label>
-            <input type="date" name="geboortedatum" value="" id="geboortedatum">
+            Ondertekende verklaart kennis genomen te hebben van dit formulier en bevestigd de juistheid van de hierboven
+            gegeven inlichtingen.
         </p>
 
-    </fieldset>
-    <fieldset>
-        <legend>Medische gegevens</legend>
-        <p>Huisarts:</p>
-
-
         <p>
-            <br><label for="nd">Naam: </label>
-            <input type="text" name="naam_dokter" value="" id="nd">
-            <br><label for="telefoon">Telefoonnummer: </label>
-            <input type="tel" name="telefoonnummer" value="" id="telefoon">
-        <p>
-            <label for="medhistoriek">Bestaat er een relevante medische historiek (heelkundige ingrepen, belangrijke
-                of
-                chronische ziektes,...) van uw kind?</label>
-            <br><textarea name="historiek" id="medhistoriek"></textarea>
+            <label for="tekendatum">Datum: </label>
+            <input type="date" name="tekendatum" value="" id="tekendatum">
         </p>
-        <p>
-            <label for="ziektes">Lijd uw kind aan een chronische ziekte of handicap?
-                (Suikerziekte,epilepsie,astma,hartaandoeningen,...)</label>
-            <br><textarea name="ziekte_kind" id="ziektes"></textarea>
-        </p>
-        <p>
-        <ol>
-            <li>
-                Is uw kind allergisch voor:
-                <ol>
-                    <li>Geneesmiddelen?
-                        <br><input type="radio" name="keuze" value="ja" id="ja">
-                        <label for="ja">Ja</label>
-                        <input type="radio" name="keuze" value="nee" id="nee">
-                        <label for="nee">Nee</label>
-                        <br>Welke?
-                        <label for="gm"></label>
-                        <input type="text" name="geneesmiddel" value="" id="gm">
-                    </li>
-                    <li>Bepaalde stoffen, dieren of levensmiddelen?
-                        <br><input type="radio" name="keuze2" value="ja" id="ja2">
-                        <label for="ja2">Ja</label>
-                        <input type="radio" name="keuze2" value="nee" id="nee2">
-                        <label for="nee2">Nee</label>
-                        <br>Welke?
-                        <label for="al"></label>
-                        <input type="text" name="allergie" value="" id="al">
-                    </li>
-                </ol>
-            </li>
-            <li>
-                Werd uw kind gevaccineerd tegen tetanus?
-                <br><input type="radio" name="keuze3" value="ja" id="ja3">
-                <label for="ja3">Ja</label>
-                <input type="radio" name="keuze3" value="nee" id="nee3">
-                <label for="nee3">Nee</label>
-                <br>Zo ja, wanneer?
-                <label for="tetanusdatum"></label>
-                <input type="date" name="tetanusdatum" value="" id="tetanusdatum">
-            </li>
-            <li>
-                Moet uw kind geneesmiddelen nemen tijdens het kamp?
-                <br><input type="radio" name="keuze4" value="ja" id="ja4">
-                <label for="ja4">Ja</label>
-                <input type="radio" name="keuze4" value="nee" id="nee4">
-                <label for="nee4">Nee</label>
-                <br>Welke, wanneer, hoeveel?
-                <br><textarea name="geneesmiddelen" id="gm"></textarea>
-            </li>
-            <li>Slaapwandelt uw kind?
-                <input type="radio" name="keuze5" value="ja" id="ja5">
-                <label for="ja5">Ja</label>
-                <input type="radio" name="keuze5" value="nee" id="nee5">
-                <label for="nee5">Nee</label>
-            </li>
-            <li>
-                Bedwatert uw kind?
-                <input type="radio" name="keuze6" value="ja" id="ja6">
-                <label for="ja6">Ja</label>
-                <input type="radio" name="keuze6" value="nee" id="nee6">
-                <label for="nee6">Nee</label>
-            </li>
-            <li>
-                Moet uw kind een dieet volgen?
-                <input type="radio" name="keuze7" value="ja" id="ja7">
-                <label for="ja7">Ja</label>
-                <input type="radio" name="keuze7" value="nee" id="nee7">
-                <label for="nee7">Nee</label>
-            </li>
-            <li>
-                Mag het bepaalde voedingsstoffen niet eten?
-                <br><textarea name="voedingstoffen" id="vs"></textarea>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-        </p>
-
-        </p>
+        <p><input type="submit" value="Medische steekkaart indienen" name="indienen"></p>
 
     </fieldset>
 </body>
